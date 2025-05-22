@@ -1,33 +1,27 @@
-# Speech to Text to Speech
+# voice-prompts-to-voice-response
 
-I built a Node.js app where you can ask questions to ChatGPT using voice prompts, see the ChatGPT-like word-by-word answer, and then listen to the responses with voice.
+I developed a Node.js application where you can pose questions to ChatGPT using vocal inputs, observe the ChatGPT-style word-by-word answer, and then hear the replies spoken aloud.
 
-Voice to Text: I turn an audio into text using [Whisper](https://openai.com/research/whisper) which is an OpenAI Speech Recognition Model that turns audio 
-into text with up to 99% accuracy. Whisper is a speech transcription system form the creators of ChatGPT. Anyone can use it, and it is completely free. The system is trained on 680 000 hours of speech data from the network and recognizes 99 languages.
+**Audio to Text Conversion:** I transform audio into text utilizing [Whisper](https://openai.com/research/whisper), which is an OpenAI Speech Recognition Model that converts audio into text with an accuracy of up to 99%. Whisper is a speech transcription framework from the creators of ChatGPT. It is available for anyone to use and is entirely free. The system has been trained on 680,000 hours of speech data from the internet and recognizes 99 different languages.
 
-Generating Answers: To generate word-by-word answers and display them, we utilize the [LangChain](https://js.langchain.com/) streaming API . This API allows
-us to receive words in real-time as they are generated. Additionally, we use Node.js Socket.IO, which enables bidirectional and event-based communication between the client and server.
+**Generating Replies:** To produce word-by-word replies and show them, we leverage the [LangChain](https://js.langchain.com/) streaming API. This API enables us to obtain words in real-time as they are formed. Furthermore, we employ Node.js Socket.IO, which facilitates bidirectional and event-driven communication between the client-side and server-side.
 
-Text to Voice: I use [gTTS.js](https://www.npmjs.com/package/gtts) which is Google Text to Speech JavaScript library originally written in Phyton.
+**Text to Audio Conversion:** I utilize [gTTS.js](https://www.npmjs.com/package/gtts), which is a Google Text to Speech JavaScript library originally developed in Python.
 
+To begin:
 
-To get started.
 ```
-       Clone the repository
+        Clone the repository
 
-       git clone https://github.com/Ashot72/Speech-to-Text-to-Speech
-       cd Speech-to-Text-to-Speech
+        git clone https://github.com/Dev-Sphere111/voice-prompts-to-voice-response/
+        cd voice-prompts-to-voice-response
 
-       Add your key to .env file
-       
-       # installs dependencies
-         npm install
+        Add your API key to the .env file
 
-       # to run locally
-         npm start
-      
+        # installs package dependencies
+          npm install
+
+        # to execute locally
+          npm start
+
 ```
-
-Go to [Speech To Text to Speech Video](https://youtu.be/PZWEQjuDxog) page
-
-Go to [Speech To Text to Speech Description](https://ashot72.github.io/Speech-to-Text-to-Speech/doc.html) page
